@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Calendar xmlns="https://ns.tsukuyo-oka.jp/japan-calendar">
+  <Eras>
+    <Era Begin="1868-01-25" End="1912-07-29" FullName="明治" ShortName="明" Initials="M"/>
+    <Era Begin="1912-07-30" End="1926-12-24" FullName="大正" ShortName="大" Initials="T"/>
+    <Era Begin="1926-12-25" End="1989-01-07" FullName="昭和" ShortName="昭" Initials="S"/>
+    <Era Begin="1989-01-08" End="2019-04-30" FullName="平成" ShortName="平" Initials="H"/>
+    <Era Begin="2019-05-01" FullName="令和" ShortName="令" Initials="R"/>
+  </Eras>
+  <Holidays>
+    <Holiday Begin="1873" End="1948" Range="1" Day="1" Name="四方節"/>
+    <!-- 年中祭日祝日ノ休暇日ヲ定ム（明治6年太政官布告第344号） -->
+    <Holiday Begin="1874" End="1948" Range="1" Day="3" Name="元始祭"/>
+    <Holiday Begin="1874" End="1948" Range="1" Day="5" Name="新年宴會"/>
+    <Holiday Begin="1874" End="1912" Range="1" Day="30" Name="孝明天皇祭"/>
+    <Holiday Begin="1874" End="1948" Range="2" Day="11" Name="紀元節"/>
+    <Holiday Begin="1874" End="1948" Range="4" Day="3" Name="神武天皇祭"/>
+    <Holiday Begin="1874" End="1878" Range="9" Day="17" Name="神嘗祭"/>
+    <Holiday Begin="1873" End="1911" Range="11" Day="3" Name="天長節"/>
+    <Holiday Begin="1873" End="1947" Range="11" Day="23" Name="新嘗祭"/>
+    <!-- 明治六年第三百四十四号布告休暇日ヘ春秋二季祭日追加（明治11年太政官達第23号） -->
+    <Holiday Begin="1879" End="1948" Day="EL0" Name="春季皇靈祭"/>
+    <Holiday Begin="1878" End="1947" Day="EL180" Name="秋季皇靈祭"/>
+    <!-- 神嘗祭十月十七日ニ改定（明治12年太政官布告第27号） -->
+    <Holiday Begin="1879" End="1947" Range="10" Day="17" Name="神嘗祭"/>
+    <!-- 休日ニ關スル件（大正元年勅令第19号） -->
+    <Holiday Begin="1913" End="1947" Range="7" Day="30" Name="明治天皇祭"/>
+    <Holiday Begin="1913" End="1926" Range="8" Day="31" Name="天長節"/>
+    <!-- 大正元年勅令第十九号中改正ノ件（大正2年勅令第259号） -->
+    <Holiday Begin="1913" End="1926" Range="10" Day="31" Name="天長節祝日"/>
+    <!-- 大正元年勅令第十九号休日ニ關スル件改正ノ件（昭和2年3月4日勅令第25号） -->
+    <Holiday Begin="1927" End="1948" Range="4" Day="29" Name="天長節"/>
+    <Holiday Begin="1927" End="1947" Range="11" Day="3" Name="明治節"/>
+    <Holiday Begin="1927" End="1947" Range="12" Day="25" Name="大正天皇祭"/>
+    <!-- 国民の祝日に関する法律（昭和23年法律第178号） -->
+    <Holiday Begin="1949" Range="1" Day="1" Name="元日"/>
+    <Holiday Begin="1949" End="1999" Range="1" Day="15" Name="成人の日"/>
+    <Holiday Begin="1949" Day="EL0" Name="春分の日"/>
+    <Holiday Begin="1949" End="1988" Range="4" Day="29" Name="天皇誕生日"/>
+    <Holiday Begin="1949" Range="5" Day="3" Name="憲法記念日"/>
+    <Holiday Begin="1949" Range="5" Day="5" Name="こどもの日"/>
+    <Holiday Begin="1948" Day="EL180" Name="秋分の日"/>
+    <Holiday Begin="1948" Range="11" Day="3" Name="文化の日"/>
+    <Holiday Begin="1948" Range="11" Day="23" Name="勤労感謝の日"/>
+    <!-- 国民の祝日に関する法律の一部を改正する法律（昭和41年法律第86号）/建国記念の日となる日を定める政令（昭和41年政令第376号） -->
+    <Holiday Begin="1967" Range="2" Day="11" Name="建国記念の日"/>
+    <Holiday Begin="1966" End="2002" Range="9" Day="15" Name="敬老の日"/>
+    <Holiday Begin="1966" End="1999" Range="10" Day="10" Name="体育の日"/>
+    <!-- 国民の祝日に関する法律の一部を改正する法律（昭和48年法律第10号） -->
+    <!-- 「国民の祝日」が日曜日にあたるときは、その翌日を休日とする。 -->
+    <!-- 国民の祝日に関する法律の一部を改正する法律（昭和60年法律第103号） -->
+    <!-- その前日及び翌日が「国民の祝日」である日（日曜日にあたる日及び前項に規定する休日にあたる日を除く。）は、休日とする。 -->
+    <!-- 国民の祝日に関する法律の一部を改正する法律（平成元年法律第5号） -->
+    <Holiday Begin="1989" End="2006" Range="4" Day="29" Name="みどりの日"/>
+    <Holiday Begin="1989" End="2018" Range="12" Day="23" Name="天皇誕生日"/>
+    <!-- 国民の祝日に関する法律の一部を改正する法律（平成7年法律第22号） -->
+    <Holiday Begin="1996" End="2002" Range="7" Day="20" Name="海の日"/>
+    <!-- 国民の祝日に関する法律の一部を改正する法律（平成10年法律第141号） -->
+    <Holiday Begin="2000" Range="1" Day="Mon2" Name="成人の日"/>
+    <Holiday Begin="2000" End="2019" Range="10" Day="Mon2" Name="体育の日"/>
+    <!-- 国民の祝日に関する法律の一部を改正する法律（平成13年法律第59号） -->
+    <Holiday Begin="2003" End="2019" Range="7" Day="Mon3" Name="海の日"/>
+    <Holiday Begin="2003" Range="9" Day="Mon3" Name="敬老の日"/>
+    <!-- 国民の祝日に関する法律の一部を改正する法律（平成17年法律第43号） -->
+    <!-- 「国民の祝日」が日曜日に当たるときは、その日後においてその日に最も近い「国民の祝日」でない日を休日とする。 -->
+    <!-- その前日及び翌日が「国民の祝日」である日（「国民の祝日」でない日に限る。）は、休日とする。 -->
+    <Holiday Begin="2007" Range="4" Day="29" Name="昭和の日"/>
+    <Holiday Begin="2007" Range="5" Day="4" Name="みどりの日"/>
+    <!-- 国民の祝日に関する法律の一部を改正する法律（平成26年法律第43号） -->
+    <Holiday Begin="2016" End="2019" Range="8" Day="11" Name="山の日"/>
+    <!-- 天皇の退位等に関する皇室典範特例法（平成29年法律第63号） -->
+    <Holiday Begin="2020" Range="2" Day="23" Name="天皇誕生日"/>
+    <!-- 平成三十二年東京オリンピック競技大会・東京パラリンピック競技大会特別措置法（平成27年法律第33号） -->
+    <Holiday Begin="2020" End="2020" Range="7" Day="23" Name="海の日"/>
+    <Holiday Begin="2020" End="2020" Range="7" Day="24" Name="スポーツの日"/>
+    <Holiday Begin="2020" End="2020" Range="8" Day="10" Name="山の日"/>
+    <Holiday Begin="2021" Range="7" Day="Mon3" Name="海の日"/>
+    <Holiday Begin="2021" Range="8" Day="11" Name="山の日"/>
+    <!-- 国民の祝日に関する法律の一部を改正する法律（平成30年法律第57号） -->
+    <Holiday Begin="2021" Range="10" Day="Mon2" Name="スポーツの日"/>
+    
+    <!-- 皇太子明仁親王の結婚の儀の行われる日を休日とする法律（昭和34年法律第16号） -->
+    <Holiday Begin="1959" End="1959" Range="4" Day="10" Name="皇太子明仁親王の結婚の儀"/>
+    <!-- 昭和天皇の大喪の礼の行われる日を休日とする法律（平成元年法律第4号） -->
+    <Holiday Begin="1989" End="1989" Range="2" Day="24" Name="昭和天皇の大喪の礼"/>
+    <!-- 即位礼正殿の儀の行われる日を休日とする法律（平成2年法律第24号） -->
+    <Holiday Begin="1990" End="1990" Range="11" Day="12" Name="即位礼正殿の儀"/>
+    <!-- 皇太子徳仁親王の結婚の儀の行われる日を休日とする法律（平成5年法律第32号） -->
+    <Holiday Begin="1993" End="1993" Range="6" Day="9" Name="皇太子徳仁親王の結婚の儀"/>
+    <!-- 天皇の即位の日及び即位礼正殿の儀の行われる日を休日とする法律（平成30年法律第99号） -->
+    <Holiday Begin="2019" End="2019" Range="5" Day="1" Name="即位の日"/>
+    <Holiday Begin="2019" End="2019" Range="10" Day="22" Name="即位礼正殿の儀"/>
+  </Holidays>
+  <SeasonalDays>
+    <SeasonalDay Day="EL315" Shift="-1" Name="節分"/>
+    <SeasonalDay Day="EL315" Name="立春"/>
+    <SeasonalDay Day="EL315" Shift="+87" Name="八十八夜"/>
+    <SeasonalDay Day="EL315" Shift="+209" Name="二百十日"/>
+    <SeasonalDay Day="EL315" Shift="+219" Name="二百二十日"/>
+    <SeasonalDay Day="EL330" Name="雨水"/>
+    <SeasonalDay Day="EL345" Name="啓蟄"/>
+    <SeasonalDay Day="EL0" Shift="-3" Name="彼岸入"/>
+    <SeasonalDay Day="EL0" Name="春分"/>
+    <SeasonalDay Day="EL0" Shift="+3" Name="彼岸明"/>
+    <SeasonalDay Day="EL0" Shift="+-戊" Name="社日"/>
+    <SeasonalDay Day="EL15" Name="清明"/>
+    <SeasonalDay Day="EL27" Name="春土用入"/>
+    <SeasonalDay Day="EL30" Name="穀雨"/>
+    <SeasonalDay Day="EL45" Shift="-1" Name="節分"/>
+    <SeasonalDay Day="EL45" Name="立夏"/>
+    <SeasonalDay Day="EL60" Name="小満"/>
+    <SeasonalDay Day="EL75" Name="芒種"/>
+    <SeasonalDay Day="EL80" Name="入梅"/>
+    <SeasonalDay Day="EL90" Name="夏至"/>
+    <SeasonalDay Day="EL100" Name="半夏生"/>
+    <SeasonalDay Day="EL105" Name="小暑"/>
+    <SeasonalDay Day="EL117" Name="夏土用入"/>
+    <SeasonalDay Day="EL120" Name="大暑"/>
+    <SeasonalDay Day="EL135" Shift="-1" Name="節分"/>
+    <SeasonalDay Day="EL135" Name="立秋"/>
+    <SeasonalDay Day="EL150" Name="処暑"/>
+    <SeasonalDay Day="EL165" Name="白露"/>
+    <SeasonalDay Day="EL180" Shift="-3" Name="秋彼岸入"/>
+    <SeasonalDay Day="EL180" Name="秋分"/>
+    <SeasonalDay Day="EL180" Shift="+3" Name="秋彼岸明"/>
+    <SeasonalDay Day="EL180" Shift="+-戊" Name="社日"/>
+    <SeasonalDay Day="EL195" Name="寒露"/>
+    <SeasonalDay Day="EL207" Name="秋土用入"/>
+    <SeasonalDay Day="EL210" Name="霜降"/>
+    <SeasonalDay Day="EL225" Shift="-1" Name="節分"/>
+    <SeasonalDay Day="EL225" Name="立冬"/>
+    <SeasonalDay Day="EL240" Name="小雪"/>
+    <SeasonalDay Day="EL255" Name="大雪"/>
+    <SeasonalDay Day="EL270" Name="冬至"/>
+    <SeasonalDay Day="EL285" Name="小寒"/>
+    <SeasonalDay Day="EL297" Name="冬土用入"/>
+    <SeasonalDay Day="EL300" Name="大寒"/>
+    <SeasonalDay Range="EL117-135" Day="EL117" Shift="+丑" Name="土用の丑"/>
+    <SeasonalDay Range="1" Day="7" Name="人日"/>
+    <SeasonalDay Range="3" Day="3" Name="上巳"/>
+    <SeasonalDay Range="5" Day="5" Name="端午"/>
+    <SeasonalDay Range="7" Day="7" Name="七夕"/>
+    <SeasonalDay Range="9" Day="9" Name="重陽"/>
+    <SeasonalDay Range="7" Day="15" Name="盆"/>
+    <SeasonalDay Range="8" Day="15" Name="月遅れ盆"/>
+    <SeasonalDay Range="11" Day="15" Name="七五三"/>
+    <SeasonalDay Range="旧7" Day="旧15" Name="旧盆"/>
+    <SeasonalDay Range="旧1" Day="旧1" Name="旧正月"/>
+    <SeasonalDay Range="旧8" Day="旧15" Name="十五夜"/>
+    <SeasonalDay Range="旧9" Day="旧13" Name="十三夜"/>
+    <SeasonalDay Range="EL315-345" Day="亥" Name="三隣亡"/>
+    <SeasonalDay Range="EL345-15" Day="寅" Name="三隣亡"/>
+    <SeasonalDay Range="EL15-45" Day="午" Name="三隣亡"/>
+    <SeasonalDay Range="EL45-75" Day="亥" Name="三隣亡"/>
+    <SeasonalDay Range="EL75-105" Day="寅" Name="三隣亡"/>
+    <SeasonalDay Range="EL105-135" Day="午" Name="三隣亡"/>
+    <SeasonalDay Range="EL135-165" Day="亥" Name="三隣亡"/>
+    <SeasonalDay Range="EL165-195" Day="寅" Name="三隣亡"/>
+    <SeasonalDay Range="EL195-225" Day="午" Name="三隣亡"/>
+    <SeasonalDay Range="EL225-255" Day="亥" Name="三隣亡"/>
+    <SeasonalDay Range="EL255-285" Day="寅" Name="三隣亡"/>
+    <SeasonalDay Range="EL285-315" Day="午" Name="三隣亡"/>
+  </SeasonalDays>
+</Calendar>

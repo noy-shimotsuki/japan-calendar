@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Calendar"
+           targetNamespace="https://ns.tsukuyo-oka.jp/japan-calendar"
+           elementFormDefault="qualified"
+           xmlns="https://ns.tsukuyo-oka.jp/japan-calendar"
+           xmlns:od="https://ns.tsukuyo-oka.jp/japan-calendar"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Calendar" type="CalendarType"/>
+  <xs:complexType name="CalendarType">
+    <xs:sequence>
+      <xs:element name="Eras" type="ErasType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Holidays" type="HolidaysType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="SeasonalDays" type="SeasonalDaysType" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ErasType">
+    <xs:sequence>
+      <xs:element name="Era" type="EraType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="HolidaysType">
+    <xs:sequence>
+      <xs:element name="Holiday" type="HolidayType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SeasonalDaysType">
+    <xs:sequence>
+      <xs:element name="SeasonalDay" type="SeasonalDayType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EraType">
+    <xs:attribute name="Begin" type="xs:date" use="required"/>
+    <xs:attribute name="End" type="xs:date"/>
+    <xs:attribute name="FullName" type="xs:string" use="required"/>
+    <xs:attribute name="ShortName" type="xs:string" use="required"/>
+    <xs:attribute name="Initials" type="xs:string" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="HolidayType">
+    <xs:attribute name="Begin" type="xs:gYear" use="required"/>
+    <xs:attribute name="End" type="xs:gYear"/>
+    <xs:attribute name="Range" type="RangeType"/>
+    <xs:attribute name="Day" type="DayType" use="required"/>
+    <xs:attribute name="Shift" type="ShiftType"/>
+    <xs:attribute name="Name" type="xs:string" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="SeasonalDayType">
+    <xs:attribute name="Begin" type="xs:gYear"/>
+    <xs:attribute name="End" type="xs:gYear"/>
+    <xs:attribute name="Range" type="RangeType"/>
+    <xs:attribute name="Day" type="DayType" use="required"/>
+    <xs:attribute name="Shift" type="ShiftType"/>
+    <xs:attribute name="Name" type="xs:string" use="required"/>
+  </xs:complexType>
+  <xs:simpleType name="RangeType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="([1-9]|1[0-2])"/><!-- 月 -->
+      <xs:pattern value="旧閏?([1-9]|1[0-2])"/><!-- 旧暦月 -->
+      <xs:pattern value="EL([1-9]?[0-9]|[12][0-9]{2}|3[0-5][0-9])-([1-9]?[0-9]|[12][0-9]{2}|3[0-5][0-9])"/><!-- 太陽黄経範囲（0〜359） -->
+      <xs:pattern value="LP(1?[0-9]|2[0-7])-(1?[0-9]|2[0-7])"/><!-- 月相範囲（0〜27） -->
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="DayType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="([1-9]|[12][0-9]|3[01])"/><!-- 日 -->
+      <xs:pattern value="旧([1-9]|[12][0-9]|30)"/><!-- 旧暦日 -->
+      <xs:pattern value="EL([1-9]?[0-9]|[12][0-9]{2}|3[0-5][0-9])"/><!-- 太陽黄経（0〜359） -->
+      <xs:pattern value="LP(1?[0-9]|2[0-7])"/><!-- 月相（0〜27） -->
+      <xs:pattern value="(Sun|Mon|Tue|Wed|Thu|Fri|Sat)[1-5]?"/><!-- 曜日 -->
+      <xs:pattern value="[甲乙丙丁戊己庚辛壬癸]"/><!-- 十干 -->
+      <xs:pattern value="[子丑寅卯辰巳午未申酉戌亥]"/><!-- 十二支 -->
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ShiftType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[\+\-][1-9][0-9]*"/><!-- 〜日後（日前） -->
+      <xs:pattern value="(\+|-|\+-)(Sun|Mon|Tue|Wed|Thu|Fri|Sat)"/><!-- 直後（直前・直近）の曜日 -->
+      <xs:pattern value="(\+|-|\+-)[甲乙丙丁戊己庚辛壬癸]"/><!-- 直後（直前・直近）の十干 -->
+      <xs:pattern value="(\+|-|\+-)[子丑寅卯辰巳午未申酉戌亥]"/><!-- 直後（直前・直近）の十二支 -->
+      <xs:pattern value="(\+|-|\+-)LP(1?[0-9]|2[0-7])"/><!-- 直後（直前・直近）の月相 -->
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
