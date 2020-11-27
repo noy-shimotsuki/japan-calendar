@@ -75,10 +75,14 @@
     <Holiday Begin="2020" End="2020" Range="7" Day="23" Name="海の日"/>
     <Holiday Begin="2020" End="2020" Range="7" Day="24" Name="スポーツの日"/>
     <Holiday Begin="2020" End="2020" Range="8" Day="10" Name="山の日"/>
-    <Holiday Begin="2021" Range="7" Day="Mon3" Name="海の日"/>
-    <Holiday Begin="2021" Range="8" Day="11" Name="山の日"/>
     <!-- 国民の祝日に関する法律の一部を改正する法律（平成30年法律第57号） -->
-    <Holiday Begin="2021" Range="10" Day="Mon2" Name="スポーツの日"/>
+    <!-- 平成三十二年東京オリンピック競技大会・東京パラリンピック競技大会特別措置法等の一部を改正する法律（令和2年法律） -->
+    <Holiday Begin="2021" End="2021" Range="7" Day="22" Name="海の日"/>
+    <Holiday Begin="2021" End="2021" Range="7" Day="23" Name="スポーツの日"/>
+    <Holiday Begin="2021" End="2021" Range="8" Day="8" Name="山の日"/>
+    <Holiday Begin="2022" Range="7" Day="Mon3" Name="海の日"/>
+    <Holiday Begin="2022" Range="8" Day="11" Name="山の日"/>
+    <Holiday Begin="2022" Range="10" Day="Mon2" Name="スポーツの日"/>
     
     <!-- 皇太子明仁親王の結婚の儀の行われる日を休日とする法律（昭和34年法律第16号） -->
     <Holiday Begin="1959" End="1959" Range="4" Day="10" Name="皇太子明仁親王の結婚の儀"/>
